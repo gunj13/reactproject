@@ -1,0 +1,71 @@
+/* Services.css */
+.services-page {
+    background-color: #c5e8ff;
+    padding: 10px;
+    margin: 0;
+  }
+  #scrollpic {
+    position: relative;
+    background-image: url('images/leansixsigma.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+  
+  .service-box-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service-box {
+    border-bottom: #33313267 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #001652;
+    width: 30%;
+    color:white;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+  }
+  
+  
+  .benefit {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailed-services {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .benefits-header {
+    text-align: center;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: #33313280 groove 5px;
+  }

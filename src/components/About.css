@@ -1,0 +1,114 @@
+/* AboutUs.css */
+.about-us-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.upper-half {
+  background-color: #e6f2ff;
+  color: black;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.about-image {
+  max-width: 15%;
+  height: auto;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.about-us-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+.upper-half h1 {
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-info {
+  margin-top: 40px;
+}
+
+.about-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.lower-half {
+  background-color:  #004aad;
+  padding: 40px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+.intro-text{
+  color:white;
+  font-size: 1.5rem;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.boxes {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.boxes:hover {
+  transform: translateY(-5px);
+}
+
+.boxes h3 {
+  color: #004aad;
+  font-size: 7rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.boxes p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .boxes {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .boxes {
+    width: 100%;
+  }
+}
