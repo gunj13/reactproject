@@ -45,6 +45,8 @@
 
 .post-box {
   width: 50%;
+  margin-top:-40%;
+  margin-left: 40px;
   background-color: #f5f5f5;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -58,6 +60,11 @@
   border-radius: 20px;
 }
 
+.btn {
+  height:auto;
+  background-color:#004aad ;
+
+}
 .post-box h3 {
   margin-top: 1rem;
 }
@@ -70,6 +77,7 @@
 
 .blog-post {
   font-family: Arial, sans-serif;
+  
 }
 
 .post-header {
@@ -85,6 +93,9 @@
   color: #333;
 }
 
+.blog-post h1 {
+  padding: 7rem;
+}
 .blog-post main {
   max-width: 800px;
   margin: 2rem auto;

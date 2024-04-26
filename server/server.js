@@ -32,7 +32,6 @@ const BlogPost = mongoose.model('BlogPost', blogPostSchema);
 app.get('/api/blog-posts', async (req, res) => {
   try {
     const blogPosts = await BlogPost.find();
-    console.log(blogPosts)
     res.json(blogPosts || []); // Send an empty array if there are no blog posts
   } catch (err) {
     res.status(500).json({ message: err.message });

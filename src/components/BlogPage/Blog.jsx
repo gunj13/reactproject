@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Blog.css";
 import BlogPost from "./BlogPost";
-import Posts from "./Posts.jsx";
+import Posts from "./Posts";
 import Footer from "../Footer";
+import Blogblog from "./BBlogblog";
 import {Link} from "react-router-dom";
 import axios from "axios";
 
@@ -59,11 +60,11 @@ const Blog = () => {
                 <img src={post.image} alt={post.title} />
                 <h3>{post.title}</h3>
                 <p>{post.previewText}</p>
-                <Link href={`/post/${post._id}`}>Read More</Link>
+                <Link to={`/post/${post._id}`}>Read More</Link>
               </div>
             ))
           ) : (
-            <p className="errormsg">No blog posts found!</p>
+            <p className="errormsg"></p>
           )}
         </div>
 
