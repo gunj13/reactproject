@@ -11,7 +11,7 @@ function Services() {
         
         <div className="service-box">
           <h2><i className="fas fa-chart-line service-icon"></i>&nbsp;&nbsp;TRAINING</h2>
-          <div class="space"></div>
+          <div className="space"></div>
           <div className="sub-section">
             <h3>Lean Methodology</h3>
             <p>
