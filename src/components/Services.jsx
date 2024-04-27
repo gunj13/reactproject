@@ -35,7 +35,7 @@ function Services() {
 
         <div className="service-box">
         <h2><i className="fas fa-chart-line service-icon"></i>&nbsp;&nbsp;CONSULTING</h2>
-        <div class="space"></div>
+        <div className="space"></div>
           <div className="sub-section">
             <h3>Strategic Planning</h3>
             <p>
@@ -53,7 +53,7 @@ function Services() {
 
         <div className="service-box">
         <h2><i className="fas fa-chart-line service-icon"></i>&nbsp;&nbsp;ASSESSMENTS</h2>
-        <div class="space"></div>
+        <div className="space"></div>
           <div className="sub-section">
             <h3>Channel Evaluation</h3>
             <p>
