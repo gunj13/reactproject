@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Blog.css";
-import BlogPost from "./BlogPost";
-import Posts from "./Posts";
 import Footer from "../Footer";
-import Blogblog from "./BBlogblog";
 import {Link} from "react-router-dom";
 import axios from "axios";
 
@@ -64,7 +61,7 @@ const Blog = () => {
               </div>
             ))
           ) : (
-            <p className="errormsg"></p>
+            <p className="errormsg">No posts found!</p>
           )}
         </div>
 

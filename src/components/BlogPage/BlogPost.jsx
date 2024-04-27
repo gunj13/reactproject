@@ -29,6 +29,8 @@ const BlogPost = () => {
       <header>
         <div className="post-header">
           <h1>{blogPost.title}</h1>
+          <h5>Authored by: Anoop Siddharth</h5>
+
         </div>
       </header>
       <main>
@@ -37,6 +39,7 @@ const BlogPost = () => {
           
         />
         <p>{blogPost.content}</p>
+        <img src={blogPost.image} style={{width:'70%',}}></img>
       </main>
       <Footer/>
     </div>

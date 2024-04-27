@@ -1,4 +1,3 @@
-import React from 'react';
 
 function FeatureSection() {
   const sectionStyle ={
@@ -16,6 +15,7 @@ function FeatureSection() {
     borderLeft: '1px black solid',
     width: '20%',
   };
+  
 
   return (
     <div style={sectionStyle}>

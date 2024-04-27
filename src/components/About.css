@@ -3,7 +3,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
-  
 }
 
 .upper-half {
@@ -34,6 +33,7 @@
   font-size: 3rem;
   text-align: center;
 }
+
 .upper-half h1 {
   margin-bottom: 20px;
 }
@@ -54,23 +54,27 @@
 }
 
 .lower-half {
-  background-color:  #004aad;
+  background-color: #004aad;
   padding: 40px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
-.intro-text{
-  color:white;
+
+.intro-text {
+  color: white;
   font-size: 1.5rem;
+}
+.boxes-wrapper {
+  display: flex;
+  justify-content: center; /* Center the wrapper horizontally */
 }
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 100px;
 }
 
 .boxes {
@@ -80,7 +84,7 @@
   border-radius: 10px;
   width: 30%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   transition: transform 0.3s ease-in-out;
 }
 

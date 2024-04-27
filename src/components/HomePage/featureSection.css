@@ -1,0 +1,31 @@
+/* featureSection.css */
+
+.FeatureSection {
+    display: flex;
+    justify-content: center;
+    margin-top: -7vh;
+    z-index: 1;
+    height: 7vh;
+    position: relative;
+    width: 100%;
+  }
+  
+  .featureBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(67, 30, 229);
+    color: #fff;
+    border-left: 1px solid black;
+    width: 20%;
+    transition: height 0.3s ease-in-out; /* Transition height property */
+    height: 7vh; /* Initial height */
+  }
+  
+  .featureBox:hover {
+    height: 10vh; /* Height on hover */
+  }
+  
+  
