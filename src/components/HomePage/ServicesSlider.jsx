@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import {Link} from 'react-router-dom';
 
 export default () => {
   return (
@@ -93,7 +94,7 @@ export default () => {
       </div>
       <div className="services-footer">
         <p>Read more about our wide range of services</p>
-        <a href="services.html" className="services-btn">View Services</a>
+        <Link to="/services" className="services-btn">View Services</Link>
       </div>
       </Swiper>
     </section>

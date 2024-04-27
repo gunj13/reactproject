@@ -42,12 +42,7 @@ const Blog = () => {
             Learn about the exciting concepts that we at Simpli amal apply to
             develop business strategies for you!
           </p>
-          <h2>Categories</h2>
-          <ul>
-            <li>Training</li>
-            <li>Consulting</li>
-          </ul>
-          <p>More coming up soon...</p>
+          <p>Blog posts coming soon...</p>
         </div></div>
 
         <div className="posts-container">
@@ -61,11 +56,12 @@ const Blog = () => {
               </div>
             ))
           ) : (
-            <p className="errormsg">No posts found!</p>
+            <p className="errormsg">Coming soon :)</p>
           )}
         </div>
 
       </main>
+      <div className="white-line"></div>
       <Footer />
     </div>
   );

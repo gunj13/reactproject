@@ -14,13 +14,13 @@ const About = () => {
       </div>
 
       <div className="lower-half">
-        <p className="intro-text">
+        <div className="intro-text">
           <h2>Simpli amal</h2> 
-          Simpli amal was founded in Nov 2022 on the principle of
-          simplified execution derived from "Amal" which means putting learning into
-          practice. Our purpose is to enable the success of our customers on their
-          transformation journey.
-        </p>
+          <p>Simpli amal was founded in Nov 2022 on the principle of
+          simplified execution derived from "amal" which means "putting learning into
+          practice". Our purpose is to enable the success of our customers on their
+          transformation journey.</p>
+        </div>
         <div className="boxes-wrapper">
           <div className="box-container">
             <div className="boxes">

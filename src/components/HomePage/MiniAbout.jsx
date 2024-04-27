@@ -5,6 +5,7 @@ function MiniAbout() {
         color:'white',
         textAlign:'center',
         fontSize: '1rem',
+        padding: '0 5% 0 5%',
       }
       
       return (

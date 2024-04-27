@@ -1,4 +1,3 @@
-/* AboutUs.css */
 .about-us-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -32,6 +31,7 @@
 .about-us-heading {
   font-size: 3rem;
   text-align: center;
+  padding-top: 15px;
 }
 
 .upper-half h1 {
@@ -61,20 +61,21 @@
   text-align: center;
 }
 
-.intro-text {
+.intro-text{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .boxes-wrapper {
   display: flex;
-  justify-content: center; /* Center the wrapper horizontally */
+  justify-content: center; 
 }
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin-left: 100px;
 }
 
 .boxes {
@@ -84,12 +85,13 @@
   border-radius: 10px;
   width: 30%;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   transition: transform 0.3s ease-in-out;
 }
 
 .boxes:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  background-color: #f4f4f4;
 }
 
 .boxes h3 {
@@ -103,6 +105,7 @@
   color: #333;
   line-height: 1.5;
   margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 768px) {
@@ -114,5 +117,149 @@
 @media (max-width: 480px) {
   .boxes {
     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.mission-intro {
+  background-color: #f8f8f8;
+  padding: 40px;
+  display: flex;
+  justify-content:left;
+  align-items: left;
+}
+
+.intro {
+  max-width: 50%;
+  text-align: left;
+}
+
+.intro h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.intro h1 {
+  color: #004aad;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-content {
+  margin-bottom: 40px;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.btn1 {
+  background-image: linear-gradient(to right, #2f0087, #5066c7, #57b1ff);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn2 {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: none;
+  border: 2px solid #2f0087;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn1 a{
+  text-decoration: none;
+  color:white;
+}
+.btn2 a {
+  text-decoration: none;
+  color:black;
+}
+
+.btn1:hover, .btn2:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.boxes {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 700px;
+  text-align: left;
+} 
+
+.boxes h3 {
+  color: #004aad;
+  font-size: 24px;
+  margin-top: 0; /* Added margin-top: 0 */
+  margin-bottom: 5px;
+}
+
+.boxes p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .mission-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .box-container {
+    align-items: center;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .boxes {
+    width: 100%; /* Set width to 100% to make all boxes equal in width */
+    max-width: 700px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

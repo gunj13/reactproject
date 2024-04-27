@@ -1,38 +1,80 @@
-import React from "react";
+import React, { useState, useEffect ,useRef} from "react";
 import Footer from './Footer';
 import './Services.css';
 
 function Services() {
   return (
     <div className="services-page">
-      {/* Detailed Services */}
     <div id="scrollpic"></div>
       <div className="detailed-services">
-        <h1 style={{ color: "#004aad" }}>Our Services</h1>
-        <div className="service-box-container">
-          <div className="service-box">
-            <i className="fas fa-chart-line service-icon"></i>
-            <h3>Training</h3>
-            <ul>
-              <li>Lean Management System</li>
-            </ul>
+        <h1>Our Services</h1>
+        
+        <div className="service-box">
+          <h2><i className="fas fa-chart-line service-icon"></i>&nbsp;&nbsp;TRAINING</h2>
+          <div class="space"></div>
+          <div className="sub-section">
+            <h3>Lean Methodology</h3>
+            <p>
+              Embrace lean principles to optimize processes, eliminate waste, and maximize value for your customers.
+            </p>
           </div>
-          <div className="service-box">
-            <i className="fas fa-star service-icon"></i>
-            <h3>Consulting</h3>
-            <ul>
-              <li>Lean Management System</li>
-            </ul>
+          <div className="sub-section">
+            <h3>Six Sigma</h3>
+            <p>
+              Achieve operational excellence and quality perfection with time-tested Six Sigma methodologies. We lay emphasis on a phased approach to build a continuous improvement culture in your organization. Build a strong performing team with training for Champion, Green Belts, and Black Belts on DMAIC and DFSS.
+            </p>
           </div>
-          <div className="service-box">
-            <i className="fas fa-lightbulb service-icon"></i>
-            <h3>Assessments / Appraisals</h3>
-            <ul>
-              <li>Lean Management System</li>
-            </ul>
+          <div className="sub-section">
+            <h3>Project Management</h3>
+            <p>
+              Equip your team with the essential skills to successfully plan, execute, and deliver projects on time and within budget through Project Management training, from traditional or Agile.
+            </p>
           </div>
+          {/* Add more sub-sections as needed */}
         </div>
+
+        <div className="service-box">
+        <h2><i className="fas fa-chart-line service-icon"></i>&nbsp;&nbsp;CONSULTING</h2>
+        <div class="space"></div>
+          <div className="sub-section">
+            <h3>Strategic Planning</h3>
+            <p>
+              Develop strategic initiatives and plans to drive business growth and competitive advantage.
+            </p>
+          </div>
+          <div className="sub-section">
+            <h3>Process Improvement</h3>
+            <p>
+              Identify bottlenecks and inefficiencies in processes, and implement solutions for enhanced productivity.
+            </p>
+          </div>
+          {/* Add more sub-sections as needed */}
+        </div>
+
+        <div className="service-box">
+        <h2><i className="fas fa-chart-line service-icon"></i>&nbsp;&nbsp;ASSESSMENTS</h2>
+        <div class="space"></div>
+          <div className="sub-section">
+            <h3>Channel Evaluation</h3>
+            <p>
+              Channel assessments provide invaluable insights into your distribution network's strengths and weaknesses, enabling strategic decision-making, optimization, and transformation.
+            </p>
+          </div>
+          <div className="sub-section">
+            <h3>Supplier Assessment</h3>
+            <p>
+              We can help ensure supplier reliability, quality, and compliance by assessing supplier performance, mitigating risks, and identifying improvement opportunities in alignment with your supply chain policies.
+            </p>
+          </div>
+          <div className="sub-section">
+            <h3>Training & Skill Assessment</h3>
+            <p>
+              We can provide customized assessment solutions to evaluate employee knowledge and skills, enabling targeted training interventions and performance improvements.
+            </p>
+          </div>
+          {/* Add more sub-sections as needed */}
       </div>
+    </div>
 
       {/* Benefits */}
 

@@ -65,7 +65,7 @@ const ContactSection = () => {
       <p>
         Whether pursuing modernization of your enterprise application estate or
         seeking a more efficient approach to application management,{" "}
-        <b>Simpli amal</b> is here to help.
+        <b style={{color:"#004aad"}}>Simpli</b>&nbsp;<b>amal</b> is here to help.
       </p>
       <p>
         When you're ready to take the next step, fill out the form below and
@@ -79,7 +79,7 @@ const ContactSection = () => {
         <label htmlFor="phone">Phone Number:</label>
         <input type="tel" id="phone" name="user_phone" required />
         <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" required></textarea><br></br>
         <input type="submit" value="Send" />
       </form>
       {showAlert && (
