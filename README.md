@@ -11,13 +11,16 @@ To clone and run this website:
 4. Run the command 'npm install' on your terminal and follow the steps to run it.
 5. To get the backend to run, type the commands 'cd server' and 'npm install express cors mongoose'
 6. Finally, type 'node server.js' to connect to MongoDB.
-
+<br><hr>
 
 <h2>Deploying using Kubernetes on Minikube</h2>
 <br><br>
 1. Run these commands based on your OS:<br>
 ✅ On macOS (Use Homebrew)<br>
-brew install minikube kubectl docker<br><br>
+brew install minikube kubectl docker<br>
+
+✅ On Windows (Using Chocolatey)<br>
+choco install minikube kubernetes-cli docker-desktop<br><br>
 
 2. Start Minikube Cluster<br>
 Once installed, start Minikube:<br>
@@ -44,6 +47,7 @@ https://hub.docker.com/r/gunj13/react-app <br><br>
 kubectl apply -f deployment.yaml<br>
 kubectl apply -f service.yaml<br>
 kubectl apply -f configmap.yaml<br>
+kubectl get secret react-app-secret<br><br>
 Open a tunnel to access the LoadBalancer <br>
 minikube tunnel<br><br>
 
