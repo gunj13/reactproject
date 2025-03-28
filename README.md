@@ -14,46 +14,44 @@ To clone and run this website:
 
 
 <h2>Deploying using Kubernetes on Minikube</h2>
-<br>
-1. Run these commands based on your OS:
-✅ On macOS (Use Homebrew)
-brew install minikube kubectl docker
+<br><br>
+1. Run these commands based on your OS:<br>
+✅ On macOS (Use Homebrew)<br>
+brew install minikube kubectl docker<br><br>
 
+2. Start Minikube Cluster<br>
+Once installed, start Minikube:<br>
+minikube start --driver=docker<br><br>
 
-2. Start Minikube Cluster
-Once installed, start Minikube:
-minikube start --driver=docker
+Verify it's running:<br>
+kubectl get nodes<br><br>
 
-Verify it's running:
-kubectl get nodes
+3. Clone the GitHub Repo Locally<br>
+git clone https://github.com/gunj13/reactproject.git <br>
+cd reactproject<br><br>
 
-3. Clone the GitHub Repo Locally
-git clone https://github.com/gunj13/reactproject.git
-cd reactproject
+4. Build the Docker Image<br>
+Now, build the Docker image for your React app:<br>
+docker build -t react-app . <br>
 
+Once done, verify the image was created:<br>
+docker images<br><br>
 
-4. Build the Docker Image
-Now, build the Docker image for your React app:
-docker build -t react-app .
+The Docker Image is available on Docker Hub:
+https://hub.docker.com/r/gunj13/react-app <br><br>
 
-Once done, verify the image was created:
-docker images
+5. Apply the config files:<br>
+kubectl apply -f deployment.yaml<br>
+kubectl apply -f service.yaml<br>
+kubectl apply -f configmap.yaml<br>
+Open a tunnel to access the LoadBalancer <br>
+minikube tunnel<br><br>
 
-The Docker Image is available on Docker Hub
-gunj13/react-app
-
-5. Apply the config files:
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-kubectl apply -f configmap.yaml
-Open a tunnel to access the LoadBalancer 
-minikube tunnel
-
-6. Finally check if everything is working:
-kubectl get pods
-kubectl get hpa
-kubectl get services
-
+6. Finally check if everything is working:<br>
+kubectl get pods<br>
+kubectl get hpa<br>
+kubectl get services<br>
+<br><br>
 7. You can then run tests over the application!
 
 
