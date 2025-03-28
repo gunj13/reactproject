@@ -9,7 +9,8 @@ function AboutFounder() {
         <h1>Meet the Founder</h1>
         <div className="about-content">
           <div className="profile">
-            <img src="/images/profile.jpeg" alt="Profile Photo" id="profileonly"/>
+            <img src="/images/blank-profile.png" alt="Profile Photo" id="profileonly"/>
+            {/* <img src="/images/profile.jpeg" alt="Profile Photo" id="profileonly"/> */}
             <div className="icon-section">
               <img src="/images/tata2.png" alt="Tata Motors" title="Tata Motors" style={{height:'45px',  padding:'3px'}}/>
               <img src="/images/honda2.png" alt="Honda Motor" title="Honda Motor"/>
@@ -17,7 +18,7 @@ function AboutFounder() {
             </div>
           </div>
           <div className="aboutStyles">
-            <h2>Anoop Siddharth</h2>
+            {/* <h2>Founder</h2> */}
             <ul>
               <li>Three decades of Corporate Experience across Business Verticals and Multiple Cultures</li>
               <li>Accomplished P&L, Sales and Marketing Leader</li>

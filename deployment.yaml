@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: react-app
+  template:
+    metadata:
+      labels:
+        app: react-app
+    spec:
+      containers:
+        - name: react-app
+          image: gunj13/react-app:v1
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"
+            limits:
+              cpu: "500m"
+          envFrom:
+            - configMapRef:
+                name: react-app-config
+          env:
+            - name: API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: react-app-secret
+                  key: API_KEY
